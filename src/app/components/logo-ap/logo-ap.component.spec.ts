@@ -6,12 +6,10 @@ describe('LogoAPComponent', () => {
   let component: LogoAPComponent;
   let fixture: ComponentFixture<LogoAPComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ LogoAPComponent ]
-    })
-    .compileComponents();
-
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [LogoAPComponent]
+    });
     fixture = TestBed.createComponent(LogoAPComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

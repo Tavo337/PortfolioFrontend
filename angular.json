@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Portolio": {
+    "ProyectoIntegrador_Kev": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/portolio",
+            "outputPath": "dist/proyecto-integrador-kev",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,12 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "PortfolioFrontend/node_modules/bootstrap/dist/css/bootstrap.css"
+              "src/styles.css"
             ],
-            "scripts": [
-              "PortfolioFrontend/node_modules/bootstrap/dist/js/bootstrap.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -63,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Portolio:build:production"
+              "browserTarget": "ProyectoIntegrador_Kev:build:production"
             },
             "development": {
-              "browserTarget": "Portolio:build:development"
+              "browserTarget": "ProyectoIntegrador_Kev:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Portolio:build"
+            "browserTarget": "ProyectoIntegrador_Kev:build"
           }
         },
         "test": {
@@ -90,15 +87,21 @@
               "src/assets"
             ],
             "styles": [
+              "ProyectoIntegrador_Kev/node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
+              
             ],
-            "scripts": []
+            "scripts": [
+              "ProyectoIntegrador_Kev/node_modules/bootstrap/dist/js/bootstrap.js",
+              "ProyectoIntegrador_Kev/node_modules/bootstrap/dist/js/bootstrap.min.js"
+
+            ]
           }
         }
       }
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "33dd230f-07d2-4f71-ade6-fbd1d4730419"
   }
 }
